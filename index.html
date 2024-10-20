@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WANTED</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5deb3; /* Kolor tła przypominający pożółkły papier */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: "Bentham", serif;
+            font-size: 110px; /* Rozmiar tytułu */
+            margin: 0; /* Usuwa margines */
+            line-height: 0.8; /* Interlinia między tytułem a podtytułem */
+        }
+
+        h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 90px; /* Rozmiar podtytułu */
+            margin: 0; /* Usuwa margines */
+            line-height: -0.3; /* Interlinia między tytułem a podtytułem */
+        }
+
+        img {
+            width: 500px; /* Zwiększa szerokość zdjęcia */
+            height: auto;
+            border: 5px solid #333; /* Dodajemy ramkę do zdjęcia */
+            margin: 15px auto; /* Ustawia margines 15px */
+            display: block; /* Wyśrodkowuje zdjęcie */
+        }
+
+        ul {
+            list-style: none; /* Usuwa domyślne kropki */
+            padding: 0; /* Usuwa domyślne wcięcie */
+            margin: 10px auto; /* Ustaw margines do 10px, zmniejszone dla mniejszego odstępu */
+            font-size: 2em; /* Ustawia rozmiar czcionki */
+            text-align: left; /* Wyśrodkowuje tekst do lewej */
+            max-width: 500px; /* Ustaw maksymalną szerokość, aby tekst był w jednej linii */
+            margin-left: auto; /* Wyśrodkowuje ul */
+            margin-right: auto; /* Wyśrodkowuje ul */
+        }
+
+        ul li {
+            position: relative; /* Umożliwia pozycjonowanie pseudo-elementu */
+            margin: 10px 0; /* Ustawia odstęp między elementami listy */
+            padding-left: 40px; /* Ustawia odstęp z lewej dla gwiazdki */
+            line-height: 1; /* Ustawia interlinię na 1, aby tekst i gwiazdki były na jednej wysokości */
+            font-style: italic; /* Ustawia kursywę dla tekstu w liście */
+        }
+
+        ul li::before {
+            content: "★"; /* Ustawia zawartość przed elementem listy jako gwiazdkę */
+            color: #FFD700; /* Ustawia kolor gwiazdki na ciemniejszy żółty */
+            position: absolute; /* Umożliwia pozycjonowanie gwiazdki */
+            left: 0; /* Pozycjonuje gwiazdkę z lewej */
+            top: -0.2em; /* Ustawia gwiazdkę wyżej, aby była na wysokości tekstu */
+            font-size: 1.5em; /* Ustawia rozmiar gwiazdki */
+        }
+
+        .reward {
+            font-family: "Playfair Display", serif; /* Ustawia czcionkę Playfair Display */
+            font-size: 105px; /* Ustawia rozmiar tekstu na 105px */
+            margin: -105px; /* Ustawia margines dla reward */
+        }
+
+        .reward-number {
+            font-family: "Playfair Display", serif; /* Ustawia czcionkę na Playfair Display */
+            font-size: 250px; /* Ustawia rozmiar liczby na 250px */
+            margin: -15px; /* Ustawia margines na 0, aby wyrównać z "zł" */
+        }
+    </style>
+</head>
+<body>
+    <h1>WANTED</h1>
+    <h2>Dead or Alive</h2>
+    
+    <!-- Tutaj wstaw swoje zdjęcie -->
+    <img src="https://raw.githubusercontent.com/wikkkkko/tusk/main/tusk%20kowboj%20wanted.jpg" alt="Zdjęcie poszukiwanego">
+
+    <ul>
+        <li>Sprzedał Polskę</li>
+        <li>Służył Ursuli</li>
+        <li>Chciał zawładnąć światem</li>
+        <li>Unikał prawa</li>
+    </ul>
+
+    <div class="reward"><span class="reward-number">5</span> zł</div> <!-- Zastosowano nową klasę dla liczby -->
+</body>
+</html>
